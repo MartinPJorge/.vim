@@ -3,6 +3,20 @@ execute pathogen#infect()
 "--GENERACION DE HELP TAGS QUE RECORRE DOCS DE LOS MODULOS
 call pathogen#helptags() 
 
+" Complete options (disable preview scratch window)
+set completeopt=menu,menuone,longest
+" Limit popup menu height
+set pumheight=15
+
+" Disable auto popup, use <Tab> to autocomplete
+let g:clang_complete_auto = 0
+" Show clang errors in the quickfix window
+let g:clang_complete_copen = 1
+let g:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib'
+
+set completefunc=ClangComplete
+
+
 "--CONFIGURACION RECOMENDADA POR DOCS DE POWERLINE-CONFIGURACION RECOMENDADA POR DOCS DE POWERLINE---
 set nocompatible   " Disable vi-compatibility
 set laststatus=2   " Always show the statusline
