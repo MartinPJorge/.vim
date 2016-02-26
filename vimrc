@@ -8,13 +8,19 @@ set completeopt=menu,menuone,longest
 " Limit popup menu height
 set pumheight=15
 
+"---CLANG_COMPLETE---
 " Disable auto popup, use <Tab> to autocomplete
 let g:clang_complete_auto = 0
 " Show clang errors in the quickfix window
 let g:clang_complete_copen = 1
+" Clang library location
 let g:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib'
+set pumheight=10             " so the complete menu doesn't get too big
+set completeopt=menu,longest " menu, menuone, longest and preview
+let g:SuperTabDefaultCompletionType='context'
+let g:clang_snippets=1       " use a snippet engine for placeholders
+let g:clang_auto_select=2    " automatically select and insert the first match
 
-set completefunc=ClangComplete
 
 
 "--CONFIGURACION RECOMENDADA POR DOCS DE POWERLINE-CONFIGURACION RECOMENDADA POR DOCS DE POWERLINE---
