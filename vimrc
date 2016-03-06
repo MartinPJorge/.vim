@@ -22,6 +22,16 @@ let g:clang_snippets=1       " use a snippet engine for placeholders
 let g:clang_auto_select=2    " automatically select and insert the first match
 
 
+"---CONFIG VIMTEX ---
+let g:vimtex_latexmk_continuous = 1
+let g:vimtex_latexmk_background = 1
+let g:vimtex_latexmk_options = '-pdf -pvc'
+"let g:vimtex_latexmk_options = '-pdfdvi'
+""let g:vimtex_latexmk_options = '-pdfps'
+"let g:vimtex_view_general_viewer = 'open'
+let g:vimtex_view_general_viewer ='/Applications/Skim.app/Contents/SharedSupport/displayline'
+
+"let g:vimtex_view_general_options = '@line @pdf @tex'
 
 "--CONFIGURACION RECOMENDADA POR DOCS DE POWERLINE-CONFIGURACION RECOMENDADA POR DOCS DE POWERLINE---
 set nocompatible   " Disable vi-compatibility
@@ -64,7 +74,6 @@ set expandtab       " Expand TABs to spaces
 
 "--ACTIVA EL USO DEL RATON--
 set mouse=a
-
-
+set backspace=indent,eol,start " para permitir el borrado
 
 
