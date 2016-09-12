@@ -47,3 +47,6 @@ set mouse=a
 set backspace=indent,eol,start " para permitir el borrado
 
 
+"--LIMITE COLUMNAS EN COMMITS--
+au FileType gitcommit set tw=50
+
