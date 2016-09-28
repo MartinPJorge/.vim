@@ -50,3 +50,9 @@ set backspace=indent,eol,start " para permitir el borrado
 "--LIMITE COLUMNAS EN COMMITS--
 au FileType gitcommit set tw=50
 
+
+"--CONFIGURACION PARA VIMTEX
+let g:vimtex_view_general_viewer = 'okular'
+let g:vimtex_view_general_options = '--unique @pdf\#src:@line@tex'
+let g:vimtex_view_general_options_latexmk = '--unique'
+
