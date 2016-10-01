@@ -1,5 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/home/jorge/Escritorio'
-let g:netrw_dirhist_2='/home/jorge'
-let g:netrw_dirhist_3='/home/jorge/Escritorio'
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/jorge'
+let g:netrw_dirhist_2='/home/jorge/.vim'
+let g:netrw_dirhist_3='/home/jorge/.vim/bundle'
+let g:netrw_dirhist_4='/home/jorge/.vim/bundle/vim-snippets'
+let g:netrw_dirhist_5='/home/jorge/.vim/bundle/vim-snippets/UltiSnips'
+let g:netrw_dirhist_6='/home/jorge/Eclipse/.metadata'
+let g:netrw_dirhist_7='/home/jorge/Eclipse/.metadata/.mylyn'
+let g:netrw_dirhist_8='/home/jorge/Eclipse/.metadata/.mylyn/contexts'
+let g:netrw_dirhist_9='/home/jorge/Escritorio/carreras'
