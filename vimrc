@@ -49,6 +49,16 @@ set expandtab       " Expand TABs to spaces
 "--DOBLAR CODIGO CONFIG
 let g:SimpylFold_docstring_preview = 1   " Mostrar docstring
 
+"--INDENTADO EN PYTHON
+au BufNewFile,BufRead *.py
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix
+
 
 "--LIMITE COLUMNAS EN COMMITS--
 au FileType gitcommit set tw=50
