@@ -43,8 +43,11 @@ set softtabstop=4   " Sets the number of columns for a TAB
 set expandtab       " Expand TABs to spaces
 
 "--ACTIVA EL USO DEL RATON--
-set mouse=a
-set backspace=indent,eol,start " para permitir el borrado
+"set mouse=a
+"set backspace=indent,eol,start " para permitir el borrado
+
+"--DOBLAR CODIGO CONFIG
+let g:SimpylFold_docstring_preview = 1   " Mostrar docstring
 
 
 "--LIMITE COLUMNAS EN COMMITS--
