@@ -46,8 +46,6 @@ set expandtab       " Expand TABs to spaces
 "set mouse=a
 "set backspace=indent,eol,start " para permitir el borrado
 
-"--DOBLAR CODIGO CONFIG
-let g:SimpylFold_docstring_preview = 1   " Mostrar docstring
 
 "--INDENTADO EN PYTHON
 au BufNewFile,BufRead *.py
@@ -68,9 +66,15 @@ let g:netrw_browse_split = 4 " 1 - open files in a new horizontal split
                              " 3 - open files in a new tab
                              " 4 - open in previous window
 
+"--FLAKE8 CONFIGURACION (SINTAXIS PYTHON CHEQUEO)
+let g:flake8_show_in_gutter=1  " show"
+
 "--LIMITE COLUMNAS EN COMMITS--
 au FileType gitcommit set tw=50
 
+"--PLIEGUE DE CODIGO
+set foldmethod=indent
+set foldlevel=99
 
 "--CONFIGURACION PARA VIMTEX
 let g:vimtex_view_general_viewer = 'okular'
