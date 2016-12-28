@@ -60,6 +60,14 @@ au BufNewFile,BufRead *.py
     \ set fileformat=unix
 
 
+"--CONFIGURACION DE NETRW
+let g:netrw_liststyle = 3    " Muestra en modo arbol
+let g:netrw_winsize = 25     " Ancho del explorador al 25%
+let g:netrw_browse_split = 4 " 1 - open files in a new horizontal split
+                             " 2 - open files in a new vertical split
+                             " 3 - open files in a new tab
+                             " 4 - open in previous window
+
 "--LIMITE COLUMNAS EN COMMITS--
 au FileType gitcommit set tw=50
 
