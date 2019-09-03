@@ -1,5 +1,9 @@
 "--PARA PATHOGEN--
+let g:pathogen_disabled = [] " To disable a plugin, add it's bundle name to the
+                             " following list
+"call add(g:pathogen_disabled, 'UltiSnips')
 execute pathogen#infect()
+
 "--GENERACION DE HELP TAGS QUE RECORRE DOCS DE LOS MODULOS
 call pathogen#helptags() 
 
@@ -7,6 +11,8 @@ call pathogen#helptags()
 set completeopt=menu,menuone,longest
 " Limit popup menu height
 set pumheight=15
+
+
 
 
 "--CONFIGURACION RECOMENDADA POR DOCS DE POWERLINE-CONFIGURACION RECOMENDADA POR DOCS DE POWERLINE---
