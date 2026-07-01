@@ -29,7 +29,7 @@ let g:vimtex_latexmk_options = '-pdf -pvc'
 "let g:vimtex_latexmk_options = '-pdfdvi'
 ""let g:vimtex_latexmk_options = '-pdfps'
 "let g:vimtex_view_general_viewer = 'open'
-let g:vimtex_view_general_viewer ='/Applications/Skim.app/Contents/SharedSupport/displayline'
+"let g:vimtex_view_general_viewer ='/Applications/Skim.app/Contents/SharedSupport/displayline'
 
 "let g:vimtex_view_general_options = '@line @pdf @tex'
 
@@ -49,7 +49,7 @@ set number
 set ruler
 
 "--RESALTA LA LINEA EN LA QUE SE ENCUENTRA EL CURSOR--
-set cursorline
+"set cursorline
 
 "---------------------------------------------------------
 
@@ -57,7 +57,7 @@ set cursorline
 "--https://github.com/altercation/vim-colors-solarized--
 syntax enable
 set background=dark "--los colores que se pueden elegir son [dark,light]
-colorscheme solarized
+"colorscheme solarized
 
 
 "--CONFIGURACION PARA INDENTADO A 4--
@@ -73,8 +73,8 @@ set softtabstop=4   " Sets the number of columns for a TAB
 set expandtab       " Expand TABs to spaces
 
 "--ACTIVA EL USO DEL RATON--
-set mouse=a
-set backspace=indent,eol,start " para permitir el borrado
+"set mouse=a
+"set backspace=indent,eol,start " para permitir el borrado
 
 "--PEP8 convention
 au BufNewFile,BufRead *.py
